@@ -27,14 +27,14 @@ public class Carrera {
         //Piloto1
         System.out.println("\n Los pilotos de esta carrera conduciran los siguentes coches: \n");
         System.out.println("Datos de los participantes:");
-        System.out.println("‍🚶‍♂️Piloto 🚗Coche 1");
+        System.out.println("El 🚶 Piloto del 🚗 Coche 1");
         System.out.println("MARCA: " + coche1.getMarca());
         System.out.println("MODELO: " + coche1.getModelo());
         System.out.println("MATRICULA: " + coche1.getMatricula());
         System.out.println("CV: " + coche1.getCv());
         System.out.println("CC: " + coche1.getCc());
         //Piloto2
-        System.out.println("\n 🚶‍♀️Piloto 🚕Coche 2");
+        System.out.println("\n El 🚶‍ ️Piloto del 🚕 Coche 2");
         System.out.println("MARCA: " + coche2.getMarca());
         System.out.println("MODELO: " + coche2.getModelo());
         System.out.println("MATRICULA: " + coche2.getMatricula());
