@@ -7,9 +7,7 @@ public class Coche {
         private int distanciaRecorrida;
 
         //Constructor
-        public Coche(){
-
-        };
+        public Coche(){};
         public Coche(String marca, String modelo, String matricula, int cv, double cc) {
             this.marca = marca;
             this.modelo = modelo;

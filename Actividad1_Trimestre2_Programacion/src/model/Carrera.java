@@ -27,14 +27,14 @@ public class Carrera {
         //Piloto1
         System.out.println("\n Los pilotos de esta carrera conduciran los siguentes coches: \n");
         System.out.println("Datos de los participantes:");
-        System.out.println("El 🚶 Piloto del 🚗 Coche 1");
+        System.out.println("‍🚶‍♂️Piloto 🚗Coche 1");
         System.out.println("MARCA: " + coche1.getMarca());
         System.out.println("MODELO: " + coche1.getModelo());
         System.out.println("MATRICULA: " + coche1.getMatricula());
         System.out.println("CV: " + coche1.getCv());
         System.out.println("CC: " + coche1.getCc());
         //Piloto2
-        System.out.println("\n El 🚶‍ ️Piloto del 🚕 Coche 2");
+        System.out.println("\n 🚶‍♀️Piloto 🚕Coche 2");
         System.out.println("MARCA: " + coche2.getMarca());
         System.out.println("MODELO: " + coche2.getModelo());
         System.out.println("MATRICULA: " + coche2.getMatricula());
@@ -46,14 +46,21 @@ public class Carrera {
             System.out.println("Vuelta " + vuelta + ":");
 
             // Acelerar el primer coche
-            System.out.println("Introduce la acelceracion del coche1");
-            aceleracion1 = teclado.nextInt();
+            do {
+                System.out.println("Introduce la acelceracion del coche1, (minimo 10)");
+                aceleracion1 = teclado.nextInt();
+            }while(aceleracion1 <10);
+
+
             coche1.acelerar(velocidadInicialCoche1 += (Math.random() * aceleracion1 ));
             System.out.println("Coche 1 " + coche1.getMatricula() + " - Distancia recorrida: " + coche1.getDistanciaRecorrida() + " km");
 
             // Acelerar el segundo coche
-            System.out.println("Introduce la acelceracion del coche2");
-            aceleracion2= teclado.nextInt();
+            do {
+                System.out.println("Introduce la acelceracion del coche2, (minimo 10)");
+                aceleracion2 = teclado.nextInt();
+            }while(aceleracion2 <10 );
+
             coche2.acelerar(velocidadInicialCoche2 += (Math.random()* aceleracion2));
             System.out.println("Coche 2 " + coche2.getMatricula() + " - Distancia recorrida: " + coche2.getDistanciaRecorrida() + " km");
 
